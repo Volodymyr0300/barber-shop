@@ -1,0 +1,7 @@
+def hanoi(n, start, finish):
+    if n <= 0: return
+    temp = 6 - start - finish
+    hanoi(n - 1, start, temp)
+    print("перенести диск", n,  "со стержня", start, "на стержень", finish)
+    hanoi(n - 1, temp, finish)
+hanoi(3, 1, 3) 
