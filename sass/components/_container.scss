@@ -1,0 +1,17 @@
+.container {
+  margin: 0 auto;
+  padding: 0 15px;
+  width: 100%;
+
+  @media screen and (min-width: $mob) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: $tab) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: $des) {
+    width: 1200px;
+  }
+}
