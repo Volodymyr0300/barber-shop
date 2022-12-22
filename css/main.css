@@ -89,6 +89,8 @@ button {
 
 .header__btn-menu {
   margin-left: auto;
+  margin-right: 31px;
+  margin-top: 8px;
 }
 
 /* Стили для подложки */
@@ -113,12 +115,12 @@ button {
   visibility: hidden;
   /*  Установаем ширину окна  */
   width: 100%;
-  max-width: 500px;
+  max-width: 337px;
   /*  Центрируем и задаем z-index */
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 50;
+  right: 50;
+  transform: translate(50%, 50%);
   z-index: 30; /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -145,17 +147,6 @@ button {
   right: 20px;
   fill: #444;
   cursor: pointer;
-}
-
-/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
-a {
-  padding: 20px;
-  display: inline-block;
-  text-decoration: none;
-  background-color: #414b52;
-  margin: 10px;
-  color: #fff;
-  border-radius: 3px;
 }
 
 .header {
