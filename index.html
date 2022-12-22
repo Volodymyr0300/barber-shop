@@ -22,37 +22,58 @@
     <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container">
-        <a class="header__logo-link link" href="">
-          <svg class="header__svg" width="68.93" height="55.46">
-            <use href="img/icons.svg#icon-logo-barbershop"></use>
-          </svg>
-        </a>
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a href="" class="header__nav-link link">About</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__nav-link link">Services and prices</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__nav-link link">Barbers</a>
-            </li>
-            <li class="header__item">
-              <a href="" class="header__nav-link link">Contacts</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__group">
-          <a href="" class="header__group-link link"></a>
-          <button class="btn header__btn" type="button">
-            <span class="header__btn-text">Online-booking</span>
+    <div class="wrapper">
+      <header class="header">
+        <div class="header__container">
+          <a class="header__logo-link link" href="">
+            <svg class="header__svg" width="68.93" height="55.46">
+              <use href="img/icons.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item">
+                <a href="" class="header__nav-link link">About</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__nav-link link">Services and prices</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__nav-link link">Barbers</a>
+              </li>
+              <li class="header__item">
+                <a href="" class="header__nav-link link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__group">
+            <a href="" class="header__group-link link"></a>
+            <button class="header__btn btn" type="button">
+              <span class="header__btn-text">Online-booking</span>
+            </button>
+          </div>
+          <button
+            class="header__btn-menu js-open-modal"
+            data-modal="header__burger"
+            type="button"
+          >
+            <svg class="header__icon-btn" width="40" height="40">
+              <use href="img/icons.svg#icon-header-btn-menu"></use>
+            </svg>
           </button>
+          <div class="modal" data-modal="header__burger">
+            <button class="header__btn-close js-modal-close">
+              <svg class="header__icon-cross" width="40" height="40">
+                <use href="img/icons.svg#icon-header-btn-menu-close"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="overlay js-overlay-modal"></div>
         </div>
-      </div>
-    </header>
-    <footer class="footer">footer</footer>
+      </header>
+      <main class="main">main</main>
+      <footer class="footer">footer</footer>
+    </div>
+    <script src="./modal.js"></script>
   </body>
 </html>

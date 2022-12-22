@@ -1,16 +1,22 @@
 .header {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .header__container {
   display: flex;
-  align-items: center;
 }
 .header__logo-link {
+  margin-right: auto;
+  margin-left: 31px;
 }
 .link {
 }
 .header__svg {
 }
 .header__nav {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 .header__list {
 }
@@ -19,12 +25,14 @@
 .header__nav-link {
 }
 .header__group {
+  @media screen and (max-width: 767.98px) {
+    display: none;
+  }
 }
 .header__group-link {
 }
-.btn {
-}
-.header__btn {
-}
+
 .header__btn-text {
+}
+.header__icon-btn {
 }
