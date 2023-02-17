@@ -93,6 +93,10 @@ button {
   margin-top: 8px;
 }
 
+.header__btn-close {
+  float: right;
+}
+
 /* Стили для подложки */
 .overlay {
   /* Скрываем подложку  */
@@ -117,10 +121,9 @@ button {
   width: 100%;
   max-width: 337px;
   /*  Центрируем и задаем z-index */
-  position: fixed;
-  top: 50;
-  right: 50;
-  transform: translate(50%, 50%);
+  position: absolute;
+  top: 0;
+  right: 0;
   z-index: 30; /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
   box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
@@ -147,6 +150,63 @@ button {
   right: 20px;
   fill: #444;
   cursor: pointer;
+}
+
+/* Стили для кнопок. Мы ведь порядочные разработчики, негоже простые ссылки оставлять */
+.header__nav-mobile {
+  padding-top: 70px;
+  text-align: left;
+}
+
+.header__list-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header__nav-link-mobile {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  color: var(#303030);
+}
+
+.header__list-mobile-numb-btn {
+  padding-top: 64px;
+  text-align: left;
+}
+
+.header__item-mobile-numb-btn {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.header__link-mobile-numb {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(#303030);
+}
+
+.header__link-mobile-btn {
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  background-color: #ffffff;
+  box-shadow: -4px 0px 8px rgba(0, 0, 0, 0.04), -2px 0px 4px rgba(0, 0, 0, 0.08), -1px 0px 3px rgba(0, 0, 0, 0.16);
+}
+
+.header__link-mobile-btn-textontent {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(#303030);
+  padding: 12px 37px;
 }
 
 .header {
